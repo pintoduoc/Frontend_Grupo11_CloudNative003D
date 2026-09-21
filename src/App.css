@@ -1,0 +1,822 @@
+/* =====================================================
+   ESTILOS GENERALES
+   ===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #fff8fa;
+  color: #3b2929;
+}
+
+
+/* =====================================================
+   HEADER Y MENÚ DE NAVEGACIÓN
+   ===================================================== */
+
+header {
+  background-color: #ffb8c7;
+  color: #3b2929;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #744028;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+nav a {
+  color: #744028;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff5f82;
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   HERO
+   ===================================================== */
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background-color: #ffc5d5;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #744028;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #5a3b2e;
+}
+
+
+/* =====================================================
+   BOTONES GENERALES
+   ===================================================== */
+
+button {
+  background-color: #744028;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #ff5f82;
+}
+
+
+/* =====================================================
+   ALOJAMIENTOS
+   ===================================================== */
+
+.alojamientos {
+  padding: 50px 60px;
+  text-align: center;
+  background-color: #fff8fa;
+}
+
+.alojamientos h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #744028;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.cards article {
+  background-color: white;
+  width: 280px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(116, 64, 40, 0.12);
+  border: 1px solid #ffdce5;
+}
+
+.cards h3 {
+  color: #ff5f82;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+  background-color: #ffb8c7;
+  color: #744028;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+
+/* =====================================================
+   LOGIN
+   ===================================================== */
+
+.login {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff8fa;
+}
+
+.login-card {
+  background-color: #ffc5d5;
+  width: 400px;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(116, 64, 40, 0.15);
+  border: 1px solid #ffb8c7;
+}
+
+.login-card h2 {
+  color: #744028;
+  margin-bottom: 15px;
+}
+
+.login-card p {
+  color: #5a3b2e;
+  margin-bottom: 30px;
+}
+
+.login-card label {
+  display: block;
+  color: #744028;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.login-card select {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 20px;
+  border: 1px solid #ffb8c7;
+  border-radius: 6px;
+  background-color: white;
+  color: #3b2929;
+  font-size: 15px;
+}
+
+.login-card button {
+  width: 100%;
+  font-size: 16px;
+}
+
+
+/* =====================================================
+   DASHBOARD
+   ===================================================== */
+
+.dashboard {
+  padding: 40px 60px;
+  background-color: #fff8fa;
+  min-height: 80vh;
+}
+
+.dashboard-header {
+  margin-bottom: 30px;
+}
+
+.dashboard-header h2 {
+  color: #744028;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.dashboard-header p {
+  color: #5a3b2e;
+}
+
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.kpi-card {
+  background-color: #ffc5d5;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(116, 64, 40, 0.10);
+  border: 1px solid #ffb8c7;
+}
+
+.kpi-card h3 {
+  color: #744028;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.kpi-card strong {
+  color: #ff5f82;
+  font-size: 32px;
+}
+
+.dashboard-section h2 {
+  color: #744028;
+  margin-bottom: 20px;
+}
+
+.reservation-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.reservation-list article {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(116, 64, 40, 0.10);
+  border: 1px solid #ffdce5;
+}
+
+.reservation-list h3 {
+  color: #744028;
+}
+
+.reservation-list p {
+  color: #5a3b2e;
+}
+
+
+/* =====================================================
+   ESTADOS DE RESERVAS
+   ===================================================== */
+
+.status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.confirmed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.stay {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.created {
+  background-color: #ffc5d5;
+  color: #744028;
+}
+
+.cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+
+/* =====================================================
+   RESERVAS
+   ===================================================== */
+
+.reservations {
+  padding: 40px 60px;
+  background-color: #fff8fa;
+  min-height: 80vh;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.page-header h2 {
+  color: #744028;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: #5a3b2e;
+}
+
+
+/* =====================================================
+   TABLA DE RESERVAS
+   ===================================================== */
+
+.reservation-table {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(116, 64, 40, 0.10);
+  overflow-x: auto;
+  border: 1px solid #ffdce5;
+}
+
+.reservation-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reservation-table th {
+  background-color: #ffb8c7;
+  color: #744028;
+  padding: 15px;
+  text-align: left;
+}
+
+.reservation-table td {
+  padding: 15px;
+  border-bottom: 1px solid #ffdce5;
+  color: #3b2929;
+}
+
+.reservation-table tr:hover {
+  background-color: #fff8fa;
+}
+
+.reservation-table td button {
+  margin: 3px;
+}
+
+
+/* =====================================================
+   FORMULARIO DE NUEVA RESERVA
+   ===================================================== */
+
+.reservation-form {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(116, 64, 40, 0.10);
+  border: 1px solid #ffdce5;
+}
+
+.reservation-form h2 {
+  color: #744028;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.reservation-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 20px;
+}
+
+.reservation-form label {
+  color: #744028;
+  font-weight: bold;
+}
+
+.reservation-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ffb8c7;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #3b2929;
+}
+
+.reservation-form input:focus {
+  outline: none;
+  border-color: #ff5f82;
+  box-shadow: 0 0 0 2px rgba(255, 95, 130, 0.15);
+}
+
+.reservation-form button {
+  grid-column: 1 / -1;
+  margin-top: 10px;
+}
+
+
+/* =====================================================
+   CATÁLOGO
+   ===================================================== */
+
+.catalog {
+  padding: 40px 60px;
+  background-color: #fff8fa;
+  min-height: 80vh;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.catalog-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(116, 64, 40, 0.10);
+  border: 1px solid #ffdce5;
+}
+
+.catalog-card h3 {
+  color: #744028;
+  margin-top: 0;
+}
+
+.catalog-card p {
+  color: #5a3b2e;
+}
+
+.catalog-card button {
+  margin-top: 15px;
+}
+
+
+/* =====================================================
+   DISPONIBILIDAD DEL CATÁLOGO
+   ===================================================== */
+
+.availability {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.available {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.occupied {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+
+/* =====================================================
+   REPORTERÍA
+   ===================================================== */
+
+.reports {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.reports .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.reports .page-header h2 {
+  margin-bottom: 8px;
+  color: #744028;
+  font-size: 32px;
+}
+
+.reports .page-header p {
+  color: #8a6a5a;
+  font-size: 16px;
+}
+
+.report-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.report-card {
+  background: #fff8fa;
+  border: 1px solid #ffc5d5;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(116, 64, 40, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(116, 64, 40, 0.12);
+}
+
+.report-card h3 {
+  color: #744028;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.report-card strong {
+  display: block;
+  color: #ff5f82;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.report-card p {
+  color: #8a6a5a;
+  font-size: 14px;
+  margin: 0;
+}
+
+.reports .dashboard-section {
+  background: #fff;
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 25px;
+  border: 1px solid #ffc5d5;
+  box-shadow: 0 5px 15px rgba(116, 64, 40, 0.06);
+}
+
+.reports .dashboard-section h2 {
+  color: #744028;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.reports .reservation-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.reports .reservation-list article {
+  background: #fff8fa;
+  border: 1px solid #ffc5d5;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.reports .reservation-list article h3 {
+  color: #744028;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.reports .reservation-list article p {
+  color: #8a6a5a;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/* =====================================================
+   AUDITORÍA
+   ===================================================== */
+
+.audit {
+  padding: 40px 60px;
+  background-color: #fff8fa;
+  min-height: 80vh;
+}
+
+
+/* =====================================================
+   FILTROS DE AUDITORÍA
+   ===================================================== */
+
+.audit-filters {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(116, 64, 40, 0.10);
+  border: 1px solid #ffdce5;
+
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.audit-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.audit-filter label {
+  color: #744028;
+  font-weight: bold;
+}
+
+.audit-filter select,
+.audit-filter input {
+  min-width: 190px;
+  padding: 10px;
+  border: 1px solid #ffb8c7;
+  border-radius: 6px;
+  background-color: white;
+  color: #3b2929;
+  font-size: 14px;
+}
+
+.audit-filter select:focus,
+.audit-filter input:focus {
+  outline: none;
+  border-color: #ff5f82;
+  box-shadow: 0 0 0 2px rgba(255, 95, 130, 0.15);
+}
+
+.audit-filters button {
+  height: 40px;
+}
+
+
+/* =====================================================
+   TABLA DE AUDITORÍA
+   ===================================================== */
+
+.audit-table {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(116, 64, 40, 0.10);
+  overflow-x: auto;
+  border: 1px solid #ffdce5;
+}
+
+.audit-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.audit-table th {
+  background-color: #ffb8c7;
+  color: #744028;
+  padding: 15px;
+  text-align: left;
+}
+
+.audit-table td {
+  padding: 15px;
+  border-bottom: 1px solid #ffdce5;
+  color: #3b2929;
+}
+
+.audit-table tr:hover {
+  background-color: #fff8fa;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   Pantallas más pequeñas
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+  header {
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .dashboard,
+  .reservations,
+  .catalog,
+  .reports,
+  .audit {
+    padding: 30px 20px;
+  }
+
+  .kpis {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reservation-list {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .report-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reports .reservation-list {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE - TABLET / MÓVIL
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+  .kpis {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation-form form {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .login-card {
+    width: 90%;
+  }
+
+  .audit-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .audit-filter {
+    width: 100%;
+  }
+
+  .audit-filter select,
+  .audit-filter input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .audit-filters button {
+    width: 100%;
+  }
+/* =====================================================
+   MENSAJE DE ERROR DE RESERVAS
+   ===================================================== */
+
+.reservation-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+}
