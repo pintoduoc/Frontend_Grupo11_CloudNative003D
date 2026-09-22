@@ -2,8 +2,8 @@ import { LogLevel } from "@azure/msal-browser";
 
 export const msalConfig = {
     auth: {
-        clientId: "9a8c1f22-da48-441c-8ba8-7f0fe7fadf57",
-        authority: "https://login.microsoftonline.com/15dd23f3-92e9-4574-8b7c-2cf6104370cd",
+        clientId: "api://9a8c1f22-da48-441c-8ba8-7f0fe7fadf57",
+        authority: "https://sts.windows.net/15dd23f3-92e9-4574-8b7c-2cf6104370cd/",
         redirectUri: "https://frontend-cloudnative.vercel.app", // URL de tu frontend local
     },
     cache: {
