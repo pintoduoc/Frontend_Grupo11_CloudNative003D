@@ -23,8 +23,8 @@ function Dashboard() {
           fetchWithToken("/api/reservations"),
           fetchWithToken("/api/catalog")
         ]);
-        setReservas(dataReservas);
-        setAlojamientos(dataAlojamientos);
+        setReservas(Array.isArray(dataReservas) ? dataReservas : []);
+        setAlojamientos(Array.isArray(dataAlojamientos) ? dataAlojamientos : []);
       } catch (error) {
         console.error("Error al cargar datos del dashboard:", error);
       } finally {
